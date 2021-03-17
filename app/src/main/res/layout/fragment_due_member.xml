@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/due_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:hint="@string/title_search"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/due_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="Due Money = "
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/pay_due"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAY DUE"
+        android:textSize="25sp"/>
+
+</LinearLayout>

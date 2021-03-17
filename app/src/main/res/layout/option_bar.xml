@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/navigation_home"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/title_home"
+        android:layout_margin="5dp"
+        app:srcCompat="@drawable/ic_home_black_24dp"
+        android:contentDescription="@string/title_home"
+        android:onClick="onOptionClickedBar"/>
+
+    <ImageView
+        android:id="@+id/navigation_option_menu"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/title_option_menu"
+        android:onClick="onOptionClickedBar"
+        android:text="@string/title_option_menu"
+        app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+    <ImageView
+        android:id="@+id/navigation_notifications"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/title_notifications"
+        android:onClick="onOptionClickedBar"
+        android:text="@string/title_notifications"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+</LinearLayout>

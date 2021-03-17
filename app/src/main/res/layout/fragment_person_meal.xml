@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/prompt_member_name"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Meal : "
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textStyle="italic"/>
+
+        <CheckBox
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="B" />
+
+        <CheckBox
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="L" />
+
+        <CheckBox
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="L" />
+
+        <AutoCompleteTextView
+            android:id="@+id/extra_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Extra"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_meal_to_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update_meal"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:background="@drawable/round_shape_edit_text"/>
+
+</LinearLayout>
